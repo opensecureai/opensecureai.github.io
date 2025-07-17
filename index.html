@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -22,9 +22,9 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#mission" class="nav-link">Mission</a></li>
+                <li><a href="#principles" class="nav-link">Principles</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#community" class="nav-link">Community</a></li>
-                <li><a href="#get-involved" class="nav-link">Get Involved</a></li>
+
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -46,8 +46,7 @@
                     with security-first principles to enhance human capabilities.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Explore Projects</a>
-                    <a href="#get-involved" class="btn btn-secondary">Join Us</a>
+                    <a href="#principles" class="btn btn-primary">Our Principles</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -92,37 +91,57 @@
         </div>
     </section>
 
-    <!-- Security Principles -->
-    <section class="security-principles">
+    <!-- Principles Section -->
+    <section id="principles" class="principles">
         <div class="container">
-            <div class="principles-content">
-                <div class="principles-text">
-                    <h2>Security-First Approach</h2>
-                    <p>Every line of code we write incorporates industry-leading security controls and best practices. We believe that AI's potential can only be fully realized when built on a foundation of trust and security.</p>
-                    <ul class="principles-list">
-                        <li><i class="fas fa-check"></i> Zero-trust architecture principles</li>
-                        <li><i class="fas fa-check"></i> End-to-end encryption by default</li>
-                        <li><i class="fas fa-check"></i> Regular security audits and penetration testing</li>
-                        <li><i class="fas fa-check"></i> Transparent vulnerability disclosure</li>
-                        <li><i class="fas fa-check"></i> Privacy-preserving AI techniques</li>
-                    </ul>
-                </div>
-                <div class="principles-visual">
-                    <div class="security-layers">
-                        <div class="layer" data-layer="Application Security">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <div class="layer" data-layer="Data Protection">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="layer" data-layer="Network Security">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <div class="layer" data-layer="Infrastructure">
-                            <i class="fas fa-server"></i>
-                        </div>
+            <div class="section-header">
+                <h2>Our Principles</h2>
+                <p>Foundational principles that guide all our AI development</p>
+            </div>
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-users"></i>
                     </div>
+                    <h3>Human-Centered AI</h3>
+                    <p>AI systems must empower humans with tools that enhance their capabilities while preserving human agency, dignity, and privacy rights above all else.</p>
                 </div>
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Interpretability & Control</h3>
+                    <p>AI systems provide clear explanations for their decisions and give users meaningful control over how they operate, ensuring humans can understand, guide, and override AI behavior when needed.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Globally Legal</h3>
+                    <p>Our AI systems comply with local laws and regulations across all jurisdictions, ensuring responsible deployment that respects regional requirements while maintaining global reach and accessibility.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>IT Security Core</h3>
+                    <p>Provide comprehensive tech security controls integrated with the well established domain specific regulation requirements, (e.g. safety, compliance).</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <h3>Non Violence Ethical Core</h3>
+                    <p>Refusal to cooperate with organizations associated with violence practices including military, terrorist, or any entities engaged in violent activities.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Well-being Focus</h3>
+                    <p>Channeling AI productivity gains into enhanced human well-being and life balance, ensuring technology serves to improve quality of life rather than increase workloads or stress.</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -137,116 +156,21 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <i class="fas fa-brain"></i>
-                        <h3>SecureAI Core</h3>
-                    </div>
-                    <p>A foundational library for building secure AI applications with built-in security controls and privacy-preserving features.</p>
-                    <div class="project-stats">
-                        <span><i class="fas fa-star"></i> 2.3k</span>
-                        <span><i class="fas fa-code-branch"></i> 450</span>
-                    </div>
-                    <a href="#" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-eye"></i>
-                        <h3>PrivacyVision</h3>
-                    </div>
-                    <p>Computer vision framework that implements federated learning and differential privacy for secure image analysis.</p>
-                    <div class="project-stats">
-                        <span><i class="fas fa-star"></i> 1.8k</span>
-                        <span><i class="fas fa-code-branch"></i> 320</span>
-                    </div>
-                    <a href="#" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-shield-virus"></i>
-                        <h3>AI GuardRails</h3>
-                    </div>
-                    <p>Real-time monitoring and protection system for AI models against adversarial attacks and data poisoning.</p>
-                    <div class="project-stats">
-                        <span><i class="fas fa-star"></i> 1.5k</span>
-                        <span><i class="fas fa-code-branch"></i> 280</span>
-                    </div>
-                    <a href="#" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Community Section -->
-    <section id="community" class="community">
-        <div class="container">
-            <div class="section-header">
-                <h2>Global Community</h2>
-                <p>Join developers, researchers, and security experts worldwide</p>
-            </div>
-            <div class="community-stats">
-                <div class="stat">
-                    <h3>50+</h3>
-                    <p>Countries</p>
-                </div>
-                <div class="stat">
-                    <h3>5,000+</h3>
-                    <p>Contributors</p>
-                </div>
-                <div class="stat">
-                    <h3>100+</h3>
-                    <p>Active Projects</p>
-                </div>
-                <div class="stat">
-                    <h3>24/7</h3>
-                    <p>Support</p>
-                </div>
-            </div>
-            <div class="community-cta">
-                <h3>Connect With Us</h3>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="#" class="social-link"><i class="fab fa-discord"></i> Discord</a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="#" class="social-link"><i class="fas fa-envelope"></i> Mailing List</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Get Involved Section -->
-    <section id="get-involved" class="get-involved">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get Involved</h2>
-                <p>Shape the future of secure AI</p>
-            </div>
-            <div class="involvement-grid">
-                <div class="involvement-card">
-                    <div class="involvement-icon">
                         <i class="fas fa-code"></i>
+                        <h3>Janito</h3>
                     </div>
-                    <h3>Contribute Code</h3>
-                    <p>Join our development efforts by contributing to existing projects or proposing new ones.</p>
-                    <a href="#" class="btn btn-outline">Start Contributing</a>
-                </div>
-                <div class="involvement-card">
-                    <div class="involvement-icon">
-                        <i class="fas fa-search"></i>
+                    <p>A modern development environment and project management tool designed for simplicity and productivity.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 100+</span>
+                        <span><i class="fas fa-code-branch"></i> 25+</span>
                     </div>
-                    <h3>Security Research</h3>
-                    <p>Help us identify vulnerabilities and improve the security posture of AI systems.</p>
-                    <a href="#" class="btn btn-outline">Join Research</a>
-                </div>
-                <div class="involvement-card">
-                    <div class="involvement-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Documentation</h3>
-                    <p>Improve our documentation, create tutorials, and help others learn secure AI practices.</p>
-                    <a href="#" class="btn btn-outline">Write Docs</a>
+                    <a href="https://github.com/janito-dev/janito" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -262,28 +186,7 @@
                 <div class="footer-section">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Security Guidelines</a></li>
-                        <li><a href="#">API Reference</a></li>
-                        <li><a href="#">Best Practices</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Community</h4>
-                    <ul>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Discord</a></li>
-                        <li><a href="#">Forum</a></li>
-                        <li><a href="#">Events</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Security Policy</a></li>
-                        <li><a href="#">Code of Conduct</a></li>
-                        <li><a href="#">License</a></li>
+                        <li><a href="https://github.com/janito-dev/janito">GitHub Repository</a></li>
                     </ul>
                 </div>
             </div>
