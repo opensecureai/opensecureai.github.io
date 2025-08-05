@@ -34,7 +34,6 @@ A modern, responsive landing page for OpenSecureAI - a global organization dedic
 1. **Hero Section**: Eye-catching introduction with call-to-action
 2. **Mission**: Three-pillar approach (Create, Distribute, Promote)
 3. **Security Principles**: Detailed security-first methodology
-4. **Featured Projects**: Showcase of open-source AI initiatives
 5. **Global Community**: Statistics and social connections
 6. **Get Involved**: Multiple ways to contribute
 7. **Footer**: Links and resources
