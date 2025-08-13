@@ -331,6 +331,8 @@ body {
 /* Section Styles */
 section {
     padding: 5rem 0;
+    /* Ensure anchor navigation accounts for fixed navbar height and prevent hidden top content */
+    scroll-margin-top: 80px;
 }
 
 .section-header {

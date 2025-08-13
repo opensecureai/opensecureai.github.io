@@ -150,10 +150,15 @@ window.addEventListener('scroll', () => {
     const hero = document.querySelector('.hero');
     const heroContent = document.querySelector('.hero-content');
     
-    if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-        if (heroContent) {
-            heroContent.style.transform = `translateY(${scrolled * -0.2}px)`;
+    // Previous implementation moved the entire hero downward with a positive translateY,
+    // causing it to visually overlay the next section during scroll. We remove that
+    // container transform and create a lighter parallax by shifting only the background
+    // reference while allowing the normal document flow to produce a clean transition.
+    if (hero) {
+        // Subtle background parallax (no layout shift / overlap)
+        hero.style.backgroundPosition = `center ${scrolled * 0.3}px`;
+        if (heroContent && scrolled < window.innerHeight) {
+            heroContent.style.transform = `translateY(${scrolled * -0.15}px)`;
             heroContent.style.opacity = 1 - (scrolled / window.innerHeight);
         }
     }
