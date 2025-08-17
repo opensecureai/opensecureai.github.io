@@ -1,4 +1,4 @@
-/* Hero Section - Centered Layout */
+/* Hero Section - Horizontal Stack Layout */
 .hero-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -15,31 +15,80 @@
 
 .hero-content {
     max-width: 800px;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 2rem auto;
 }
 
 .hero-visual {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .hero-bullets {
-    margin-top: 2rem;
-    margin-left: 0;
-    background: #fffbe6;
-    border-radius: 16px;
-    padding: 1.7rem 2.2rem;
-    box-shadow: 0 8px 32px rgba(37,99,235,0.10), 0 1.5px 6px rgba(251,191,36,0.08);
-    font-size: 1.15rem;
-    color: #1a1a1a;
-    max-width: 320px;
-    border: 2px solid #2563eb;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(251, 191, 36, 0.3);
     position: relative;
     overflow: hidden;
     transition: box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-bullets ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.hero-bullets li {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-bullets li i {
+    font-size: 1.3em;
+    color: #fbbf24;
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.5));
+    transition: all 0.3s ease;
+}
+
+.hero-bullets li:hover i {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.8));
+}
+
+.hero-bullets li a {
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero-bullets li a:hover {
+    color: #fbbf24;
 }
 
 /* Responsive adjustments */
@@ -49,11 +98,30 @@
     }
     
     .hero-content {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-visual {
+        flex-direction: column;
+        gap: 1.5rem;
     }
     
     .hero-bullets {
-        max-width: 95vw;
-        margin: 1.5rem 0 0 0;
+        width: 250px;
+        height: 250px;
+        padding: 1.5rem;
+    }
+    
+    .hero-bullets ul {
+        gap: 1rem;
+    }
+    
+    .hero-bullets li {
+        font-size: 0.95em;
+        gap: 0.6em;
+    }
+    
+    .hero-bullets li i {
+        font-size: 1.2em;
     }
 }
