@@ -1,9 +1,3 @@
-/* Remove underline from the GitHub link in hero-bullets */
-.hero-bullets a {
-    text-decoration: none;
-    color: inherit;
-}
-
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -139,7 +133,7 @@ body {
 }
 .hero-bullets li:last-child {
     margin-bottom: 0;
-}
+};
 @media (max-width: 900px) {
     .hero-container {
         grid-template-columns: 1fr;
@@ -172,7 +166,7 @@ body {
 }
 .hero-bullets li:last-child {
     margin-bottom: 0;
-}
+};
 @media (max-width: 900px) {
     .hero-container {
         grid-template-columns: 1fr;
@@ -201,7 +195,7 @@ body {
     bottom: 0;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff08" points="0,1000 1000,0 1000,1000"/></svg>');
     background-size: cover;
-}
+};
 
 .hero-container {
     max-width: 1200px;
@@ -261,7 +255,7 @@ body {
     background: #f59e0b;
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
-}
+};
 
 .btn-secondary {
     background: transparent;
@@ -273,7 +267,7 @@ body {
     background: white;
     color: #667eea;
     transform: translateY(-2px);
-}
+};
 
 .btn-outline {
     background: transparent;
@@ -285,7 +279,7 @@ body {
     background: #2563eb;
     color: white;
     transform: translateY(-2px);
-}
+};
 
 .hero-visual {
     display: flex;
@@ -374,7 +368,7 @@ section {
 .mission-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
+};
 
 .mission-icon {
     width: 80px;
@@ -489,7 +483,7 @@ section {
     font-size: 0.875rem;
     opacity: 0.7;
     white-space: nowrap;
-}
+};
 
 @keyframes rotate {
     0% { transform: rotate(0deg); }
@@ -521,7 +515,7 @@ section {
 .principle-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
+};
 
 .principle-icon {
     width: 80px;
@@ -575,7 +569,7 @@ section {
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
+};
 
 .project-header {
     display: flex;
@@ -630,7 +624,7 @@ section {
 
 .project-link:hover {
     color: #1d4ed8;
-}
+};
 
 .project-link i {
     margin-left: 0.5rem;
@@ -698,7 +692,7 @@ section {
     background: #2563eb;
     color: white;
     transform: translateY(-2px);
-}
+};
 
 .social-link i {
     margin-right: 0.5rem;
@@ -728,7 +722,7 @@ section {
 .involvement-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
+};
 
 .involvement-icon {
     width: 80px;
@@ -794,7 +788,7 @@ section {
 
 .footer-section ul li a:hover {
     color: #fbbf24;
-}
+};
 
 .footer-logo {
     display: flex;
